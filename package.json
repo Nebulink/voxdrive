@@ -1,0 +1,13 @@
+{
+  "name": "voxdrive",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Denis Sellu",
+  "license": "MIT",
+  "dependencies": {
+    "electron-prebuilt": "^1.4.12"
+  }
+}
