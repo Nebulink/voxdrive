@@ -8,6 +8,7 @@
   "author": "Denis Sellu",
   "license": "MIT",
   "dependencies": {
-    "electron-prebuilt": "^1.4.12"
+    "electron-prebuilt": "^1.4.12",
+    "three": "^0.83.0"
   }
 }
