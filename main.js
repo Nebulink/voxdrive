@@ -6,12 +6,18 @@ app.on('window-all-closed', function() {
 });
 
 app.on('ready', () => {
-  let win = new BrowserWindow({
+  let mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    titleBarStyle: 'hidden'
+    show: false,
+    titleBarStyle: 'hidden',
+    backgroundColor: '#60BAE9',
   })
 
-  win.loadURL(`file://${__dirname}/app/index.html`)
-  win.webContents.openDevTools();
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
+  })
+
+  mainWindow.loadURL(`file://${__dirname}/app/index.html`)
+  mainWindow.webContents.openDevTools();
 })
