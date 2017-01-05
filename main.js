@@ -1,4 +1,5 @@
 const {app, BrowserWindow} = require('electron')
+var path = require('path')
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
@@ -12,6 +13,7 @@ app.on('ready', () => {
     show: false,
     titleBarStyle: 'hidden',
     backgroundColor: '#60BAE9',
+    icon: path.join(__dirname, 'app/images/voxdrive-logo-64x64.png')
   })
 
   mainWindow.once('ready-to-show', () => {
